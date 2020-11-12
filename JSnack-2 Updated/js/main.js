@@ -18,13 +18,19 @@ $(document).ready(function() {
       peso: 45,
     },
   ];
-  
+
 
   //Stampo la bici con il peso minore utilizzando destructuring e template literal
-   bici.sort((a, b) => {
-    return a.peso - b.peso
-   });
-   console.log(bici)
+  let lightweghtbike = bici[0];
+
+  for(var i = 1; i < bici.length; i++){
+    if(bici[i].peso < lightweghtbike.peso){
+      lightweghtbike = bici[i];
+    }
+  };
+
+  const lightweghtbike = [nome, peso]
+  console.log('la bici con il peso minore è ${nome} e pesa ${peso}');
 
 
 });
