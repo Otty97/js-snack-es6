@@ -18,10 +18,13 @@ $(document).ready(function() {
       peso: 45,
     },
   ];
-    console.log(bici);
+  
 
   //Stampo la bici con il peso minore utilizzando destructuring e template literal
-  
+   bici.sort((a, b) => {
+    return a.peso - b.peso
+   });
+   console.log(bici)
 
 
 });
