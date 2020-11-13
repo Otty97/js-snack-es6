@@ -29,8 +29,8 @@ $(document).ready(function() {
     }
   };
 
-  const lightweghtbike = [nome, peso]
-  console.log('la bici con il peso minore è ${nome} e pesa ${peso}');
+  $('#bici').text(<li>nome: ${nome}</li>
+    <li>key: ${peso}</li>)
 
 
 });
